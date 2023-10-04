@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "muli", sans-serif;
+    font-style: normal;
+  }
+  
+  /* Do 700px */
+  nav {
+    background-color: white;
+  }
+  
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border-bottom: 2px solid #0000002c;
+    }
+  
+  .nav-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+  }
+  
+  .logo-icon {
+    font-size: 55px;
+    padding: 5px;
+    color: #2F1C6A;
+    margin: 15px 0px 0px 15px;
+  }
+  
+  .logo-title a {
+    margin: 25px 10px 15px 10px;
+    font-size: 25px;
+    padding: 5px;
+    color: #2F1C6A;
+    text-decoration: none;
+  }
+  
+  .nav-header button {
+    display: none;
+  }
+  
+  .nav-menu {
+    display: flex;
+    background-color: rgba(169, 169, 169, 0.119);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    margin: 0px  0px 15px 0px;
+    padding: 10px;
+  }
+  
+  .nav-menu a {
+    margin-right: 50px;
+    font-family: "muli", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    }
+  
+  .activeLink {
+    color: #2F1C6A;
+  }
+  
+  
+  .nonactiveLink {
+    color: black
+  }
+  
+  
+  @media (max-width: 700px) {
+    .navigation {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+    .nav-menu {
+      width: 100%;
+      padding: 10px 5px;
+      flex-direction: column; 
+    }
+  
+    .nav-menu a {
+      width: 100%;
+      margin-right: 0; 
+      margin-bottom: 10px; 
+    }
+  
+    .nav-header button {
+      display: block;
+      background-color: transparent;
+      border: none;
+    }
+  
+    .nav-header {
+      width: 100%;
+    }
+  
+    .hamburger-icon {
+      color: #301c6a61;
+      font-size: 25px;
+      margin-right: 20px;
+    }
+  
+  .hide {
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.1s linear;
+  }
+  
+  .show {
+    height: 150px;
+    transition: all 0.1s linear;
+  }
+  }
+  
