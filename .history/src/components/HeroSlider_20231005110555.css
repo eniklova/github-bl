@@ -1,0 +1,28 @@
+/* HeroSlider.css */
+.carousel a-block{
+    background-color:aqua;
+    max-height: 350px; /* Nastaví maximální výšku bannera na 350px */
+    overflow: hidden; /* Skryje obsah, který by přesahoval rozměry bannera */
+}
+
+.carousel b-block{
+    background-color:rgb(61, 41, 77);
+    max-height: 350px; /* Nastaví maximální výšku bannera na 350px */
+    overflow: hidden; /* Skryje obsah, který by přesahoval rozměry bannera */
+}
+
+.carousel c{
+    background-color:rgb(24, 168, 38);
+    max-height: 350px; /* Nastaví maximální výšku bannera na 350px */
+    overflow: hidden; /* Skryje obsah, který by přesahoval rozměry bannera */
+}
+
+.carousel-inner {
+    max-width: 600px; /* Nastaví maximální šířku obsahu Carousel na 600px */
+    margin: 0 auto; /* Vodorovné zarovnání obsahu na střed */
+}
+
+.carousel-item img {
+    width: 100%; /* Obrázek se rozšíří na maximální šířku obsahu Carousel */
+    height: auto; /* Umožní zachování původního poměru stran obrázku */
+}

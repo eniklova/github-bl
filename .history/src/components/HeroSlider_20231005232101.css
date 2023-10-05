@@ -1,13 +1,13 @@
 /* HeroSlider.css */
 .carousel {
     max-height: 450px; 
-    overflow:hidden;
+    overflow: hidden; 
     background-color: #673ee5
 }
 
 .carousel-inner {
     max-width: 600px; 
-    margin: auto 400px;
+    margin: ;
 }
 
 .carousel-item img {
@@ -21,7 +21,7 @@
     text-align:right;
     font-size: 36px;
     font-weight: bold;
-    margin-top: auto;
+    margin-inline-end: 20px;
     
     
 }
@@ -30,7 +30,7 @@
     text-align:right;
     font-size: 25px;
     font-weight: bold;
-    margin-right: -24px;
+    margin-right: 60px;
     
 }
 

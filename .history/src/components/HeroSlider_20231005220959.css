@@ -1,0 +1,28 @@
+/* HeroSlider.css */
+.carousel {
+    background-color: rgb(100, 78, 209);
+    max-height: 350px;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    display: flex; /* Use flex layout for better alignment */
+}
+
+.carousel-item img {
+    width: 50%; /* Adjust the width of the images */
+    height: auto;
+    float: left; /* Align images to the left */
+    margin-right: 20px; /* Add spacing between images and text */
+}
+
+.carousel-caption {
+    width: 50%; /* Adjust the width of the captions */
+    float: right; /* Align captions to the right */
+    text-align: right; /* Align text within captions to the right */
+}

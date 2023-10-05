@@ -1,13 +1,13 @@
 /* HeroSlider.css */
 .carousel {
     max-height: 450px; 
-    overflow:hidden;
+    overflow: hidden; 
     background-color: #673ee5
 }
 
 .carousel-inner {
     max-width: 600px; 
-    margin: auto 400px;
+    margin-left: 200px;
 }
 
 .carousel-item img {
@@ -21,7 +21,7 @@
     text-align:right;
     font-size: 36px;
     font-weight: bold;
-    margin-top: auto;
+    margin-inline-end: 20px;
     
     
 }
@@ -30,7 +30,7 @@
     text-align:right;
     font-size: 25px;
     font-weight: bold;
-    margin-right: -24px;
+    margin-right: 60px;
     
 }
 
@@ -41,6 +41,6 @@
     bottom: 0; /* Nechajte text na dne */
     left: auto; /* Zrušte výchozí hodnoty left (ktoré by mohli brániť posunu doprava) */
     padding: 25px; /* Pridať odstup od okrajov */
-    text-align: right; /* Zarovnať text na pravú stranu */
+     text-align: right; /* Zarovnať text na pravú stranu */
     z-index: 1; /* Z-index, aby bol text nad obrázkom */
 }

@@ -1,0 +1,23 @@
+/* HeroSlider.css */
+.carousel {
+    max-height: 350px; 
+    overflow: hidden; 
+    background-color: #673ee5
+}
+
+.carousel-inner {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.carousel-item img {
+    width: 100%; 
+    height: auto; 
+
+}
+.carousel-caption h3 {
+    color: black;
+    text-align:right;
+    font-size: 40px;
+    font-weight: bold;
+}

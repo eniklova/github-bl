@@ -1,0 +1,10 @@
+/* HeroSlider.css */
+.carousel-inner {
+    background-color: purple; /* Nastaví pozadí bannera na fialovou barvu */
+    max-height: 350px; /* Nastaví maximální výšku bannera na 350px */
+}
+
+.carousel-item img {
+    width: 600px; /* Nastaví šířku obrázku na 600px */
+    height: auto; /* Umožní zachování původního poměru stran obrázku */
+}

@@ -5,21 +5,21 @@ const HeroSlider = () => {
     return (
         <>
             <Carousel>
-                <Carousel.Item interval={4000}>
-                    <img
-                        className="a-block"
-                        src="https://www.hostinger.com/blog/wp-content/uploads/sites/4/2023/06/Choosing-the-Best-Backup-Solution-Restic-vs.-Borg--1024x596.webp"
-                        alt="First slide"
-                    />
+            <Carousel.Item interval={1000} className="a-block">
+        <img
+            className="w-100"
+            src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2023/02/build-website-with-chatgpt-2.webp"
+            alt="First slide"
+        />
                     <Carousel.Caption>
                         <h3>Why did the React developer get lost?</h3>
                         <p>They forgot to use the React Router.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval={4000}>
+                <Carousel.Item interval={500}>
                     <img
                         className="b-block"
-                        src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2023/06/Website-Development-alt-1.webp"
+                        src="https://topdev4u.com/wp-content/uploads/2023/06/how-to-remove-version-from-css-and-js-in-wordpress.jpg.webp"
                         alt="Second slide"
                     />
                     <Carousel.Caption>
@@ -29,8 +29,8 @@ const HeroSlider = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="c-block w-100"
-                        src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2021/08/how-to-make-an-online-portfolio.webp"
+                        className="c-block"
+                        src="https://www.hostinger.de/tutorials/wp-content/uploads/sites/23/2023/09/Website-Development-alt-1.webp"
                         alt="Third slide"
                     />
                     <Carousel.Caption>

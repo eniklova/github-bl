@@ -1,0 +1,28 @@
+/* HeroSlider.css */
+.carousel {
+    background-color: rgb(100, 78, 209);
+    max-height: 350px;
+    overflow: hidden;
+    display: flex; /* Použiť flexbox pre zarovnanie obsahu */
+    align-items: center; /* Zarovnať obsah vertikálne do stredu */
+}
+
+.carousel-inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    display: flex; /* Použiť flexbox pre zarovnanie obsahu */
+    align-items: center; /* Zarovnať obsah vertikálne do stredu */
+}
+
+.carousel-item img {
+    width: 40%; /* Prispôsobiť šírku obrázkov podľa potreby */
+    height: auto;
+}
+
+.carousel-caption {
+    flex: 1; /* Rozťahovať popis na celú dostupnú šírku */
+    text-align: right; /* Zarovnať text vpravo */
+}

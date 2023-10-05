@@ -1,0 +1,32 @@
+/* HeroSlider.css */
+.carousel {
+    max-height: 350px; /* Nastaví maximální výšku bannera na 350px */
+    overflow: hidden; /* Skryje obsah, který by přesahoval rozměry bannera */
+}
+
+.carousel-inner {
+    max-width: 600px; /* Nastaví maximální šířku obsahu Carousel na 600px */
+    margin: 0 auto; /* Vodorovné zarovnání obsahu na střed */
+}
+
+/* První Carousel Item */
+.carousel-item.a-block {
+    background-color: aqua; /* Nastaví pozadí prvního Carousel Itemu na aqua */
+}
+
+/* Druhý Carousel Item */
+.carousel-item.b-block {
+    background-color: rgb(61, 41, 77); /* Nastaví pozadí druhého Carousel Itemu na danou barvu */
+}
+
+/* Třetí Carousel Item */
+.carousel-item.c-block {
+    background-color: rgb(24, 168, 38); /* Nastaví pozadí třetího Carousel Itemu na danou barvu */
+}
+
+/* Vizuální úpravy pro text v Carousel Caption */
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.8); /* Průhledné pozadí pro text v Carousel Caption */
+    color: black; /* Barva textu v Carousel Caption */
+    padding: 10px; /* Odsazení textu od okraje */
+}

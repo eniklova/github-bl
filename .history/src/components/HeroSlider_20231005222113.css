@@ -1,0 +1,21 @@
+/* HeroSlider.css */
+.carousel {
+    background-color:rgb(100, 78, 209);
+    max-height: 350px; 
+    overflow: hidden; 
+}
+
+.carousel-inner {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.carousel-item img {
+    width: 100%; 
+    height: auto; 
+
+}
+.carousel-item {
+    display: flex; /* Použiť flexbox pre zarovnanie obsahu */
+    align-items: center; /* Zarovnať obsah vertikálne do stredu */
+}
