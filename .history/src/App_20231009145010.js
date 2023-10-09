@@ -21,7 +21,6 @@ const App = () =>  {
         <Route path="/all-articles/:articleID" element={ <ArticleList />} />
         <Route path="/kontakt" element={ <Kontakt />} />
         <Route path="/newarticel" element={ <NewArticel />} />
-       
         <Route path="*" element={ <Error /> }/>
       </Route>
       

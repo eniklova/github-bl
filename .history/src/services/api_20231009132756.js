@@ -18,7 +18,8 @@ const API_URL = "https://test-api-79d35.ondigitalocean.app/article"
   
       return response.data;
     } catch (error) {
-        console.error("Chyba pri získavaní článkov:", error);
+      // Spravujte chyby tu, ak sa vyskytnú
+      console.error("Chyba pri získavaní článkov:", error);
       throw error;
     }
   };

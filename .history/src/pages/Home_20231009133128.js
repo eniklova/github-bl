@@ -1,4 +1,3 @@
-import ArticleList from "../components/ArticleList"
 import HeroSlider from "../components/HeroSlider"
 
 const Home = () => {
@@ -7,7 +6,7 @@ const Home = () => {
        <HeroSlider/>
       </main>
       <section>
-        <ArticleList/>
+        <
       </section>
    
      

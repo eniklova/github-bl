@@ -1,3 +1,4 @@
+// ArticleForm.js
 import React, { useState } from 'react';
 
 function ArticleForm() {
@@ -46,6 +47,8 @@ function ArticleForm() {
     <div>
       <h2>Vytvoriť článok</h2>
       <form onSubmit={handleSubmit}>
+        {/* Zde vložte formulářové prvky pro název, perex, obsah, autora a datum publikace */}
+        {/* Například: */}
         <div>
           <label htmlFor="title">Názov:</label>
           <input
@@ -56,45 +59,9 @@ function ArticleForm() {
             onChange={handleChange}
           />
         </div>
-        <div>
-          <label htmlFor="perex">Perex:</label>
-          <input
-            type="text"
-            id="perex"
-            name="perex"
-            value={formData.perex}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="content">Obsah:</label>
-          <textarea
-            id="content"
-            name="content"
-            value={formData.content}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="author">Autor:</label>
-          <input
-            type="text"
-            id="author"
-            name="author"
-            value={formData.author}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="published_at">Publikované dňa:</label>
-          <input
-            type="text"
-            id="published_at"
-            name="published_at"
-            value={formData.published_at}
-            onChange={handleChange}
-          />
-        </div>
+        {/* Další formulářové prvky */}
+        {/* ... */}
+
         <div>
           <button type="submit">Vytvoriť článok</button>
         </div>

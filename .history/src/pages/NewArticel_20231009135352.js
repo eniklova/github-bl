@@ -1,3 +1,5 @@
+
+
 import React, { useState } from 'react';
 
 function ArticleForm() {
@@ -26,7 +28,7 @@ function ArticleForm() {
     };
 
     try {
-      const response = await fetch('https://test-api-79d35.ondigitalocean.app/article', {
+      const response = await fetch('https://example.com/api/articles', {
         method: 'POST',
         headers: headers,
         body: JSON.stringify(formData),

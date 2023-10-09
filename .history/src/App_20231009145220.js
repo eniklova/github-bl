@@ -4,7 +4,7 @@ import Aboutme from "./pages/Aboutme"
 import Articles from "./pages/Articles"
 import Kontakt from "./pages/Kontakt"
 import Error from "./pages/Error"
-import NewArticel from "./pages/NewArticel"
+import NewArticl"
 import SharedLayout from "./pages/SharedLayout"
 import ArticleList from "./components/ArticleList"
 
@@ -21,7 +21,6 @@ const App = () =>  {
         <Route path="/all-articles/:articleID" element={ <ArticleList />} />
         <Route path="/kontakt" element={ <Kontakt />} />
         <Route path="/newarticel" element={ <NewArticel />} />
-       
         <Route path="*" element={ <Error /> }/>
       </Route>
       

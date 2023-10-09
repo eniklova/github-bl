@@ -2,6 +2,11 @@ import axios from "axios";
 
 const API_URL = "https://test-api-79d35.ondigitalocean.app/article"
 
+export const getArticles = async () => {
+    const response = await axios.get(`${API_URL}/articles`);
+    return response.data;
+  };
+
   export const getArticles = async (perPage, categoryId, page) => {
     try {
       const response = await axios.get(API_URL, {
@@ -18,7 +23,8 @@ const API_URL = "https://test-api-79d35.ondigitalocean.app/article"
   
       return response.data;
     } catch (error) {
-        console.error("Chyba pri získavaní článkov:", error);
+      // Spravujte chyby tu, ak sa vyskytnú
+      console.error("Chyba pri získavaní článkov:", error);
       throw error;
     }
   };

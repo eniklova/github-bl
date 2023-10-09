@@ -31,7 +31,7 @@ const Navbar = () => {
         <NavLink to="aboutme" className={ ({isActive}) => isActive ? "activeLink link" : "nonactiveLink link"}>O mne</NavLink> 
         <NavLink to="articles" className={ ({isActive}) => isActive ? "activeLink link" : "nonactiveLink link"}>Články</NavLink>
         <NavLink to="kontakt" className={ ({isActive}) => isActive ? "activeLink link" : "nonactiveLink link"}>Kontakt</NavLink>
-        <NavLink to="newarticel" className={ ({isActive}) => isActive ? "activeLink link" : "nonactiveLink link"}>Pridaj článok</NavLink>
+        <NavLink to="kontakt" className={ ({isActive}) => isActive ? "activeLink link" : "nonactiveLink link"}>Kontakt</NavLink>
       </div>    
     </header>
   );
