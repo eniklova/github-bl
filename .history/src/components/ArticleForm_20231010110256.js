@@ -8,10 +8,11 @@ function ArticleForm() {
     perex: "",
     content: "",
     author: "",
-    });
+    published_at: "",
+  });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;t
+    const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value,
@@ -73,7 +74,16 @@ function ArticleForm() {
             onChange={handleChange}
           />
         </div>
-        
+        <div>
+          <label htmlFor="published_at">Dátum publikácie:</label>
+          <input
+            type="datetime-local"
+            id="published_at"
+            name="published_at"
+            value={formData.published_at}
+            onChange={handleChange}
+          />
+        </div>
         <button type="submit">Vytvoriť článok</button>
       </form>
     </div>

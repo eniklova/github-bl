@@ -5,7 +5,8 @@ function ArticleList() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-      getArticles().then((data) => {
+    
+    getArticles().then((data) => {
       setArticles(data);
     });
   }, []);

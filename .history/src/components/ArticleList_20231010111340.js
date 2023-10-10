@@ -5,7 +5,8 @@ function ArticleList() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-      getArticles().then((data) => {
+    // Získajte zoznam článkov z API pri načítaní komponenty
+    getArticles().then((data) => {
       setArticles(data);
     });
   }, []);
