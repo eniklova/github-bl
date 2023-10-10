@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const API_URL = "https://test-api-79d35.ondigitalocean.app/article";
+const API_URL1 = "https://test-api-79d35.ondigitalocean.app/article";
 
 export const getArticles = async (perPage, categoryId, page) => {
   try {
@@ -11,8 +12,9 @@ export const getArticles = async (perPage, categoryId, page) => {
         page: page,
       },
       headers: {
-        Accept: "application/json", // Pouze hlavička Accept pro GET
-      },
+        Accept: "application/json",
+        "Content-Type": "application/json",
+               },
     });
 
     return response.data;
@@ -24,7 +26,7 @@ export const getArticles = async (perPage, categoryId, page) => {
 
 export const createArticle = async (articleData) => {
   try {
-    const response = await axios.post(API_URL, articleData, {
+    const response = await axios.post(API_URL1, articleData, {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",

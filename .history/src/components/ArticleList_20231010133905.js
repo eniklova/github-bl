@@ -5,7 +5,7 @@ function ArticleList() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    const perPage = null; 
+    const perPage = null; // Počet článků na stránku (null nebo undefined pro všechny články)
     const categoryId = null; 
     const page = null; 
 

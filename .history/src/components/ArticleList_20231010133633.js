@@ -5,9 +5,9 @@ function ArticleList() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    const perPage = null; 
-    const categoryId = null; 
-    const page = null; 
+    const perPage = null; // Počet článků na stránku (null nebo undefined pro všechny články)
+    const categoryId = null; // ID kategorie (null nebo undefined pro žádný filtr)
+    const page = null; // Stránka (null nebo undefined pro všechny stránky)
 
     getArticles(perPage, categoryId, page).then((data) => {
       setArticles(data);

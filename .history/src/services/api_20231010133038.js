@@ -2,6 +2,7 @@ import axios from "axios";
 
 const API_URL = "https://test-api-79d35.ondigitalocean.app/article";
 
+
 export const getArticles = async (perPage, categoryId, page) => {
   try {
     const response = await axios.get(API_URL, {
@@ -11,9 +12,16 @@ export const getArticles = async (perPage, categoryId, page) => {
         page: page,
       },
       headers: {
-        Accept: "application/json", // Pouze hlavička Accept pro GET
+        Accept: "application/json", // Odebráno "Content-Type" pro GET
       },
     });
+
+    return response.data;
+  } catch (error) {
+    console.error("Chyba pri získavaní článkov:", error);
+    throw error;
+  }
+};
 
     return response.data;
   } catch (error) {

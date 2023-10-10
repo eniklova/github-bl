@@ -11,8 +11,9 @@ export const getArticles = async (perPage, categoryId, page) => {
         page: page,
       },
       headers: {
-        Accept: "application/json", // Pouze hlavička Accept pro GET
-      },
+        Accept: "application/json",
+        "Content-Type": "application/json",
+               },
     });
 
     return response.data;
