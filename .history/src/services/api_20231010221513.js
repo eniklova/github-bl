@@ -1,9 +1,9 @@
 import axios from "axios";
 
-const BASE_URL = "https://test-api-79d35.ondigitalocean.app/article/";
+const BASE_URL = "https://test-api-79d35.ondigitalocean.app";
 
 export const getArticles = async (perPage, categoryId, page) => {
-  const URL = `${BASE_URL}/?per_page=5&category_id=1&page=1`;
+  const URL = `${BASE_URL}/article`;
 
   try {
     const response = await axios.get(URL, {
@@ -13,8 +13,8 @@ export const getArticles = async (perPage, categoryId, page) => {
         page: page,
       },
       headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
       },
     });
 
@@ -26,7 +26,7 @@ export const getArticles = async (perPage, categoryId, page) => {
 };
 
 export const createArticle = async (articleData) => {
-  const URL = `${BASE_URL}`;
+  const URL = `${BASE_URL}/article`;
 
   try {
     const response = await axios.post(URL, articleData, {

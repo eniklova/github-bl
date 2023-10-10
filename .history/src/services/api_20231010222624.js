@@ -26,7 +26,7 @@ export const getArticles = async (perPage, categoryId, page) => {
 };
 
 export const createArticle = async (articleData) => {
-  const URL = `${BASE_URL}`;
+  const URL = `${BASE_URL}/article`;
 
   try {
     const response = await axios.post(URL, articleData, {
