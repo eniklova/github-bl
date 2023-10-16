@@ -27,19 +27,19 @@ function ArticleForm() {
 
     try {
       await createArticle(formData);
-      setSubmitMessage("Článok bol úspešne odoslaný!");
+      setSubmitMessage("Článek byl úspěšně odeslán!");
       setIsSubmitted(true);
       // Vymažeme data z formuláře po úspěšném odeslání
       setFormData({ ...initialFormData });
     } catch (error) {
-      console.error("Chyba pri vytváraní článku:", error);
-      setSubmitMessage("Chyba pri odosielaní článku");
+      console.error("Chyba při vytváření článku:", error);
+      setSubmitMessage("Chyba při odesílání článku");
     }
   };
 
   return (
     <div>
-      <h2>Vytvogit riť nový článok</h2>
+      <h2>Vytvořit nový článek</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="title">Název:</label>

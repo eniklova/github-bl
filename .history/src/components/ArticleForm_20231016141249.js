@@ -39,7 +39,7 @@ function ArticleForm() {
 
   return (
     <div>
-      <h2>Vytvogit riť nový článok</h2>
+      <h2>Vytvořit nový článek</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="title">Název:</label>

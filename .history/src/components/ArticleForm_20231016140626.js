@@ -2,15 +2,13 @@ import React, { useState } from "react";
 import { createArticle } from "../services/api";
 
 function ArticleForm() {
-  const initialFormData = {
+  const [formData, setFormData] = useState({
     title: "",
     perex: "",
     content: "",
     author: "",
-  };
-  const [formData, setFormData] = useState({ ...initialFormData });
+  });
   const [submitMessage, setSubmitMessage] = useState("");
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,23 +21,22 @@ function ArticleForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Zobrazíme data z formularu v konzole
     console.log("Dáta z formulára:", formData);
 
     try {
       await createArticle(formData);
-      setSubmitMessage("Článok bol úspešne odoslaný!");
-      setIsSubmitted(true);
-      // Vymažeme data z formuláře po úspěšném odeslání
-      setFormData({ ...initialFormData });
+      setSubmitMessage("Článek byl úspěšně odeslán!");
+      // Můžete provést další akce, například přesměrování
     } catch (error) {
-      console.error("Chyba pri vytváraní článku:", error);
-      setSubmitMessage("Chyba pri odosielaní článku");
+      console.error("Chyba při vytváření článku:", error);
+      setSubmitMessage("Chyba při odesílání článku");
     }
   };
 
   return (
     <div>
-      <h2>Vytvogit riť nový článok</h2>
+      <h2>Vytvořit nový článek</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="title">Název:</label>
@@ -81,9 +78,7 @@ function ArticleForm() {
           />
         </div>
 
-        {isSubmitted ? null : (
-          <button type="submit">Odeslat článek</button>
-        )}
+        <button type="submit"> článek</button>
       </form>
 
       {submitMessage && <p>{submitMessage}</p>}
