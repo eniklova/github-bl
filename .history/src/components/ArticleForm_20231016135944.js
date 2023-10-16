@@ -8,7 +8,7 @@ function ArticleForm() {
     content: "",
     author: "",
   });
-  const [submitMessage, setSubmitMessage] = useState("");
+  const [submitMessage, setSubmitMessage] = useState(""); // State pro zobrazení zprávy
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,7 +25,7 @@ function ArticleForm() {
       setSubmitMessage("Článok bol odoslaný!");
        } catch (error) {
       console.error("Chyba pri vytváraní článku", error);
-      setSubmitMessage("Chyba pri odosielaní článku");
+      setSubmitMessage("Chyba pri odosie článku");
     }
   };
 

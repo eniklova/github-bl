@@ -8,7 +8,7 @@ function ArticleForm() {
     content: "",
     author: "",
   });
-  const [submitMessage, setSubmitMessage] = useState("");
+  const [submitMessage, setSubmitMessage] = useState(""); git 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
