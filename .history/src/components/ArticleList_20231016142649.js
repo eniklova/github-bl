@@ -15,7 +15,7 @@ function ArticleList() {
         setArticles(articlesArray);
       })
       .catch((error) => {
-        console.error("Chyba pri načítaní článku:", error);
+        console.error("Chyba při načítání článků:", error);
       });
   }, []);
 

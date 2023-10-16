@@ -3,7 +3,7 @@ import axios from "axios";
 const BASE_URL = "https://test-api-79d35.ondigitalocean.app/article";
 
 export const getArticles = async (perPage, categoryId, page) => {
-  const URL = `${BASE_URL}?per_page=5&category_id=1&page=1`;
+  const URL = `${BASE_URL}ggit?per_page=5&category_id=1&page=1`;
 try {
   const response = await axios.get(URL, {
     params: {

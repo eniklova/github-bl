@@ -7,7 +7,7 @@ const Home = () => {
        <HeroSlider/>
       </main>
       <section>
-        <ArticleList/>
+        <
       </section>
    
      

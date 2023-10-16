@@ -5,17 +5,18 @@ function ArticleList() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    const perPage = 10; // Počet článkov na stránku
+    const perPage = 10; // Počet článků na stránku
     const categoryId = 1; // ID kategorie
     const page = 1; // Číslo stránky
 
     getArticles(perPage, categoryId, page)
       .then((data) => {
+        // Zde zajistíme, že data jsou polem
         const articlesArray = Array.isArray(data) ? data : [];
         setArticles(articlesArray);
       })
       .catch((error) => {
-        console.error("Chyba pri načítaní článku:", error);
+        console.error("Chyba při načítání článků:", error);
       });
   }, []);
 

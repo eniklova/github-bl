@@ -11,11 +11,12 @@ function ArticleList() {
 
     getArticles(perPage, categoryId, page)
       .then((data) => {
+        // Zde zajistíme, že data jsou polem
         const articlesArray = Array.isArray(data) ? data : [];
         setArticles(articlesArray);
       })
       .catch((error) => {
-        console.error("Chyba pri načítaní článku:", error);
+        console.error("Chyba při načítání článků:", error);
       });
   }, []);
 
