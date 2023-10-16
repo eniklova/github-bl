@@ -22,9 +22,12 @@ function ArticleForm() {
     e.preventDefault();
     try {
       await createArticle(formData);
+      // Odeslání proběhlo úspěšně, aktualizujeme zprávu
       setSubmitMessage("Článok bol odoslaný!");
-       } catch (error) {
+      // Můžete provést další akce, například přesměrování
+    } catch (error) {
       console.error("Chyba pri vytvváraní článku", error);
+      // Chyba při odesílání, aktualizujeme chybovou zprávu
       setSubmitMessage("Chyba při odesílání článku");
     }
   };

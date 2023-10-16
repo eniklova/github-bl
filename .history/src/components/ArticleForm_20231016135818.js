@@ -25,7 +25,7 @@ function ArticleForm() {
       setSubmitMessage("Článok bol odoslaný!");
        } catch (error) {
       console.error("Chyba pri vytvváraní článku", error);
-      setSubmitMessage("Chyba při odesílání článku");
+            setSubmitMessage("Chyba při odesílání článku");
     }
   };
 
