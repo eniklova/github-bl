@@ -5,7 +5,7 @@ function Articles () {
   return <section>
     <h1>Články</h1>
     <div>
-      <ArticleList/>
+      <ArticleList"
     </div>
   </section>
 }

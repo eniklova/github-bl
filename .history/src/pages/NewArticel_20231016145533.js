@@ -4,7 +4,7 @@ import ArticleForm from '../components/ArticleForm';
 function NewArticle() {
   return (
     <div>
-      <ArticleForm/>
+            <ArticleForm/>
     </div>
   );
 }

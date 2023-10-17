@@ -7,7 +7,7 @@ const HeroSlider = () => {
             <Carousel.Item interval={4000}>
                 <img
                     className="a-block"
-                    src="../Images/1.jpg"
+                    src="./Images/1.jpg"
                     alt="First slide"
                 />
                 <Carousel.Caption>

@@ -29,7 +29,7 @@ const HeroSlider = () => {
             <Carousel.Item>
                 <img
                     className="c-block w-100"
-                    src="../Images/4.webp"
+                    src="./components/Images/4.webp"
                     alt="Third slide"
                 />
                 <Carousel.Caption>

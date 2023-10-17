@@ -1,4 +1,4 @@
-import ArticleList from "../components/ArticleList"
+import ArticleAllList from "../components/ArticleList"
 
 
 function Articles () {

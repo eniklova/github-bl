@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { createArticle } from "../services/api";
 
 function ArticleForm() {
-  const [formData, setFormData] = useState({
-    title: '',
-    perex: '',
-    content: '',
-    author: '',
-    published_at: '',
-  });
+  const initialFormData = {
+    title: "",
+    perex: "",
+    content: "",
+    author: "",
+  };
+  const [formData, setFormData] = useState({ ...initialFormData });
+  const [submitMessage, setSubmitMessage] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,34 +23,26 @@ function ArticleForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const headers = {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
-    };
+    console.log("Dáta z formulára:", formData);
 
     try {
-      const response = await fetch('https://test-api-79d35.ondigitalocean.app/article', {
-        method: 'POST',
-        headers: headers,
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        console.log('Článok bol úspešne vytvorený');
-      } else {
-        console.error('Chyba pri vytváraní článku');
-      }
+      await createArticle(formData);
+      setSubmitMessage("Článok bol úspešne odoslaný!");
+      setIsSubmitted(true);
+      // Vymažeme data z formuláře po úspěšném odeslání
+      setFormData({ ...initialFormData });
     } catch (error) {
-      console.error('Chyba pri komunikácii s API:', error);
+      console.error("Chyba pri vytváraní článku:", error);
+      setSubmitMessage("Chyba pri odosielaní článku");
     }
   };
 
   return (
     <div>
-      <h2>Vytvoriť článok</h2>
+      <h2>Vytvogit riť nový článok</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="title">Názov:</label>
+          <label htmlFor="title">Název:</label>
           <input
             type="text"
             id="title"
@@ -85,20 +80,13 @@ function ArticleForm() {
             onChange={handleChange}
           />
         </div>
-        <div>
-          <label htmlFor="published_at">Publikované dňa:</label>
-          <input
-            type="text"
-            id="published_at"
-            name="published_at"
-            value={formData.published_at}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <button type="submit">Vytvoriť článok</button>
-        </div>
+
+        {isSubmitted ? null : (
+          <button type="submit">Odoslať článek</button>
+        )}
       </form>
+
+      {submitMessage && <p>{submitMessage}</p>}
     </div>
   );
 }

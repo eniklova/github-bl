@@ -1,11 +1,11 @@
-import ArticleList from "../components/ArticleList"
+import ArticleAllList from "../components/ArticleList"
 
 
 function Articles () {
   return <section>
     <h1>Články</h1>
     <div>
-      <ArticleList/>
+      <ArticleAllList/>
     </div>
   </section>
 }
